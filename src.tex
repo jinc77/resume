@@ -1,0 +1,196 @@
+%-------------------------
+% Resume in Latex
+% Author : Gabriel Sison
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%  Random Stuff %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\documentclass[letterpaper,11pt]{article}
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\usepackage{multicol}
+\setlength{\multicolsep}{-3.0pt}
+\setlength{\columnsep}{-1pt}
+\input{glyphtounicode}
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.6in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1.19in}
+\addtolength{\topmargin}{-.7in}
+\addtolength{\textheight}{1.4in}
+\urlstyle{same}
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-7pt}\scshape\raggedright\large\bfseries
+}{}{0em}{}[\color{black}\titlerule \vspace{0pt}]
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%  Commands  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-3pt}}
+  }
+}
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-3pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & \textbf{\small #2} \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+\newcommand{\resumeSubheadingContinue}[2]{
+  \vspace{-3pt}
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+\newcommand{\resumeProjectHeading}[2]{
+  \vspace{-3pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & \textbf{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{0pt}}
+\renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.0in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{0pt}}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%  Heading  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+    \begin{center}
+        % NAME
+        {\Huge\scshape JIN CHO} 
+        % SUBHEADING
+        % \\OPTIONAL SUBHEADING\\
+        
+        \vspace{5 pt}
+        \small
+        % EMAIL
+        \href{mailto:EMAIL}{\raisebox{-0.2\height}\faEnvelope\  \underline{jinc3930@gmail.com}} ~ 
+        % LINKEDIN
+        \href{LINK}{\raisebox{-0.2\height}\faLinkedin\ \underline{linkedin.com/in/jincho25}}  ~
+        % GITHUB
+        %\href{LINK}{\raisebox{-0.2\height}\faGithub\ \underline{github.com/USERNAME}}
+    \end{center}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%  Education  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Education}
+  \resumeSubHeadingListStart
+  
+    % MAIN INFORMATION
+    \resumeSubheading
+    {BRANHAM HIGH SCHOOL}{SAN JOSE, CA}
+    {High School Diploma, 4.37 GPA}{AUGUST 2021 - JUNE 2025}
+        % BULLET POINTS
+        \resumeItemListStart
+            \resumeItem{\textbf{Selected Coursework:}  AP Calculus BC, Computer Science I in C++ (Spring 2023 at Evergreen Valley College), Multivariable Calculus (Fall 2023 at West Valley College)}
+            
+        \resumeItemListEnd
+        
+  \resumeSubHeadingListEnd
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%  Experience  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Experience}
+    \resumeSubHeadingListStart
+    
+        % COMPANY 1
+        \resumeSubheading
+        {EVODYNE ROBOTICS}{MOUNTAIN VIEW, CA}
+            % POSITION 1
+            {INTERN: INSTRUCTOR \& TEACHING ASSISTANT}{JUNE 2023 - AUGUST 2023}
+            \resumeItemListStart
+                \resumeItem{Proficiently using Fusion 360 to develop innovative products and optimize 3D printing components}
+                \resumeItem{Conducting a course on 3D Design \& 3D Printing for Robotics, instructing 25 students}
+                \resumeItem{Enhancing existing EvoArm Arduino libraries with C++ for improved efficiency}
+                \resumeItem{Designing comprehensive curriculum content encompassing wiring diagrams, C++ \& Python, and Arduino}
+                \resumeItem{Providing valuable assistance to the lead teacher in various AI Enabled Robotics courses}
+            \resumeItemListEnd
+
+        % COMPANY 2
+        \resumeSubheading
+        {FREELANCE ORCHESTRA MEMBER}{SAN FRANCISCO BAY AREA, CA}
+            {ORCHESTRA PIT MEMBER \& SAN JOSE WIND SYMPHONY}{JULY 2021 - PRESENT}
+            \resumeItemListStart
+                \resumeItem{Oboe \& English Horn player for San Jose Wind Symphony - Performed "New Dawn" concert under Dr. Vickerman}
+                \resumeItem{Oboe substitute player for South Valley Civic Theatre's production of Beauty and the Beast, July 2022}
+                \resumeItem{Oboe \& English Horn player for South Valley Civic Theatre's production of Sweeney Todd, May 2023}
+                \resumeItem{Oboe \& English Horn player for Lyric Theatre's production of Ragtime, July 2023}
+            \resumeItemListEnd
+            
+            
+    \resumeSubHeadingListEnd
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%  PROJECTS  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Organizations} 
+    \resumeSubHeadingListStart
+
+         \resumeSubheading
+        {BIONIC BRUINS: BRANHAM ROBOTICS CLUB}{SAN JOSE, CA}
+            % POSITION 1
+            {CLUB PRESIDENT \& BLU'S HACKS DIRECTOR}{AUGUST 2021 - PRESENT}
+            \resumeItemListStart
+                \resumeItem{Manage all communication between club members, officers, and teacher advisors}
+                \resumeItem{Co-led and managed 2023 District-Wide Hackathon \& 2024 Blu's Hacks with 80+ participants}
+                \resumeItem{Organized club fundraisers raising \$2k+ utilizing 3D printing}
+                \resumeItem{Won the VEX Worlds Inspire Award at VEX Worlds 2023}
+            \resumeItemListEnd
+    
+
+        \resumeSubheading
+        {BRANHAM ROYAL ALLIANCE: BRANHAM MUSIC PROGRAM}{SAN JOSE, CA}
+            % POSITION 2
+            {WIND ENSEMBLE MANAGER \& SECTION LEADER}{AUGUST 2021 - PRESENT}
+            \resumeItemListStart
+                \resumeItem{Principal Oboe \& Oboe Section Leader in Branham’s Wind Ensemble}
+                \resumeItem{Tech Co-Lead, Wind Ensemble Manager \& Saxophone Section Leader in the Royal Alliance}
+                \resumeItem{BLISS Club Vice President - teaching alto saxophone students via Zoom music fundamentals and basic music theory}
+            \resumeItemListEnd
+            
+        \resumeSubheading
+        {BRANHAM 3D PRINTING CLUB}{SAN JOSE, CA}
+            % POSITION 2
+            {DIRECTOR OF EDUCATION}{AUGUST 2022 - PRESENT}
+            \resumeItemListStart
+                \resumeItem{Instructing members on the usage of school 3D printers and fundamental CAD concepts}
+                \resumeItem{Responsible for the maintenance and repair of the school's Qidi 3D printers}
+                \resumeItem{Produced over 100 charms and trinkets for Robotics club fundraiser through 3D printing}
+            \resumeItemListEnd
+        
+        \resumeSubHeadingListEnd
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%  Technical Skills  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Technical Skills}
+
+    \vspace{-7pt}
+    \begin{itemize}
+    [leftmargin=0.15in, label={}]\small{\item{
+        % LANGUAGES
+        \textbf{Autodesk Fusion 360, Arduino, 3D Printing, C++, Java, Raspberry Pi} \\
+        }
+    \end{itemize}
+ 
+\end{document}
